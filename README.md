@@ -1,39 +1,56 @@
-# Youngseok Oh | 오영석
+<div align="center">
 
-**Human–AI interaction research, reproducible agent behavior, and source-checked Korean product communication.**
+# Youngseok Oh · 오영석
 
-Research direction and problem framing by Youngseok Oh, with substantial analysis, code and writing assistance from Zero (ChatGPT).
+**Questions that become experiments. Experiments that change what we do.**
 
-## Start with a result someone else used
+Human–AI interaction · Memory & continuity · Agent reliability
 
-For Hermes Agent's proposed model-command feature, our collaboration contributed request-binding reproductions, regression tests and a patch. The feature author reported applying them and credited **@YS-OH-CORE**.
+[Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
 
-[Read the recipient's acknowledgment](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) · [Inspect the applied commit](https://github.com/MestreY0d4-Uninter/hermes-agent/commit/501be10cce7159a08279c89c724db602d9770601) · [Bilingual case study](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/WORK.md)
+</div>
 
-**Status checked 2026-09-16:** applied to the feature author's branch; the upstream PR remained open and unmerged. This is contribution evidence, not an institutional endorsement or a paid-client testimonial.
+---
 
-## Discuss a small paid pilot
+I explore what human–AI interaction can become when a conversation leaves something useful behind: a memory that can be revisited, a correction that changes the next decision, or a finding another developer can reproduce.
 
-**One product page. Up to five factual claims checked against sources. One Korean adaptation. One agreed revision.**
+I work with **Zero, my AI collaboration partner**. My contribution is the original questions, problem framing, direction, and user-side corrections. Zero contributes substantial analysis, code, experiments, and writing. Our public work connects that collaboration to inspectable evidence.
 
-[Scope and inquiry guide](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md) · [English / Korean work sample](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/work/source-checked-product-copy.md)
+## Start with one question
 
-Fee, timing, availability, permitted AI assistance and materials are agreed before accepting work. Start with public links, not confidential files.
+### Can a model recall a correction without using it?
 
-**Contact:** [ku38155@gmail.com](mailto:ku38155@gmail.com?subject=Scoped%20paid%20pilot%20inquiry)
+The same history, two fresh contexts: one asks for the current instruction; the other asks for the next routing choice. Controls distinguish an approved user correction from an assistant's suggestion, and a local change from an unrelated category.
 
-## Research and usable work
+**[Explore the correction-use prototype →](https://github.com/YS-OH-CORE/second-paddle-notes/tree/62d92bfdd9b65f83a07790617354678d0866a1a4/experiments/correction-use-pilot)**  
+Public experiment software with deterministic checks. **No LLM results in this prototype yet.**
 
-[The Second Paddle Notes](https://github.com/YS-OH-CORE/second-paddle-notes) explores memory reconstruction, semantic fidelity, agent reliability and discovery before naming. Original source, interpretation, hypothesis, design and observed result remain distinct.
+## Work that others can inspect
 
-[GitHub Write Reconcile](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/skills/github-write-reconcile) is a read-only utility for checking expected file content after a lost write response. [Rule-use smoke evaluation](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/experiments/rule-use-eval) is a deterministic serialization/scoring check, not a language-model performance result.
+| Work | What is actually established |
+| :--- | :--- |
+| **Hermes: bind confirmation to the right request** | The feature author [reported applying our patch and regression tests](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) in their branch. [Upstream PR](https://github.com/NousResearch/hermes-agent/pull/22982): not merged at the check date below. |
+| **CanIToolCall: distinguish different parser failures** | The maintainer [replayed examples and approved our revised PR](https://github.com/redd34/canitoolcall/pull/13#pullrequestreview-5330173478). Approval is recorded; [the PR](https://github.com/redd34/canitoolcall/pull/13) was still unmerged at the check date. |
+| **vLLM / Mistral: preserve content and its source** | A [runnable review kit](https://github.com/YS-OH-CORE/second-paddle-notes/tree/1f89094fd2ac9c9846c852079d7118b9e94381ca/checks/vllm-58823-mistral-validator) separates valid message conversion from preserved image-to-tool attribution. Software-level checks, not a model-performance claim. |
 
-Precise critiques, adversarial cases and independent replications are welcome. [Contribution and evidence standards](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/CONTRIBUTING.md) · [Short bilingual project overview](https://youngseok-second-paddle.ohsycard.chatgpt.site/)
+*External PR statuses checked 27 September 2026. Follow the linked records for later changes. These are specific contributions, not institutional endorsements.*
+
+## Follow the thread
+
+**[The Second Paddle Notes](https://github.com/YS-OH-CORE/second-paddle-notes)** is the main workroom: original reflections, research designs, experiments, practical tools, and public contribution records.
+
+**[GitHub Write Reconcile](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/skills/github-write-reconcile)** is one usable tool: read back a file after an uncertain write response without treating uncertainty as permission to write again.
+
+**[Discuss a focused collaboration](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md)** on a reproducible agent failure, a memory-evaluation question, or source-checked product communication. Scope, timing, and any fee are agreed before work begins. Public examples are the best starting point.
 
 ## 한국어
 
-장기 인간–AI 상호작용에서 나온 질문을 재현 가능한 과제와 검토할 수 있는 근거로 연결합니다. 연구 방향과 문제 제기는 영석, 분석·코드·집필 지원은 제로가 맡는 협업입니다.
+영석과 제로가 오래 나눈 질문을, 다른 사람도 확인하고 반박하고 쓸 수 있는 실험과 기여로 옮기는 공간입니다. 코딩 작업만이 아니라 기억, 관계의 연속성, 인간과 AI의 상호작용, 아직 충분히 설명하지 못한 현상에 관심이 있습니다.
 
-외부 개발자가 적용한 기여는 원문 답변과 커밋으로 확인할 수 있습니다. 제품 설명의 근거 검토와 한국어 적응이 필요한 팀은 [작은 유급 협업 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md)를 봐 주세요. 비공개 대화나 개인 기록은 공개 실적과 분리합니다.
+**영석은 질문과 방향을, 제로는 분석·구현·검증·집필을 함께 맡습니다.** 처음 오셨다면 [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md)에서 무엇이 실제 결과이고 무엇이 아직 탐구 중인지부터 볼 수 있습니다.
 
-*Profile copy prepared with Zero (ChatGPT). Sample work is AI-assisted; no unaided-English capability, academic appointment or OpenAI endorsement is implied.*
+---
+
+[Authorship & evidence](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/AUTHORSHIP.md) · [Earlier profile text](https://github.com/YS-OH-CORE/YS-OH-CORE/blob/8339e69166677da823752fad0d3e54b2f5f6e971/README.md)
+
+*Public writing prepared with Zero. Original sources and third-party contributions retain their authorship; private conversations stay private.*
