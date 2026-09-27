@@ -1,49 +1,34 @@
 # Youngseok Oh | 오영석
 
-**AI-agent reliability, memory continuity, and evidence you can rerun.**
+I investigate memory, saved tools and request handling in AI agents, with **Zero (ChatGPT)** as my AI collaboration partner.
 
-I frame problems from sustained human–AI interaction and judge their user-facing meaning. **Zero (ChatGPT)** is my AI collaboration partner for substantial technical investigation, code, execution and writing.
+I frame the questions and judge their user-facing meaning. Zero provides substantial technical investigation, code, execution and writing assistance.
 
-[Selected work and public evidence](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md#evidence-at-a-glance) · [Discuss one focused review](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md)
+## Problems I work on
 
-## Work that other contributors used
+- Checking whether a saved and restored tool still behaves the same way.
+- Tracing whether a changed request reaches the action that runs.
+- Checking what an evaluation's saved results actually support.
 
-| Problem | Contribution | Recipient's own record |
-|---|---|---|
-| A fresh approval could consume an earlier request's payload | Request-binding reproduction, patch and regression tests | [Hermes feature author reports applying the patch and tests](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201), with [commit credit](https://github.com/MestreY0d4-Uninter/hermes-agent/commit/501be10cce7159a08279c89c724db602d9770601) |
-| Deletion could report success while matching records remained | Populated-store counterexample and follow-up verification | [mem0 contributor credits the check and changes the implementation](https://github.com/mem0ai/mem0/issues/7439#issuecomment-5843366869) |
-| A memory-evaluation comparison changed both judge model and rubric | Saved-verdict recalculation and reporting feedback | [TAM's revised report names Youngseok and Zero](https://github.com/vbcherepanov/total-agent-memory/blob/55d0ab0124ca4fca81479a5bcafa262aaaf0e19e/docs/benchmarks/head-to-head-v14/RESULTS.md#revisions) |
+I can help narrow a reported problem to a reproducible example, compare a proposed change and document the tested scope.
 
-These are distinct contribution records, not product-wide certifications. As checked on **27 September 2026**, Hermes PR #22982 is open and unmerged; mem0 PR #7464 is closed and unmerged. Recipient use of our work is documented separately from upstream release.
+[Technical notes and examples](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [Discuss a small, focused review](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md)
 
-The [selected-work page](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) also covers a regression requested by a Transformers bug reporter, exact-commit smolagents persistence checks, and dated research records.
+## Notes and tools
 
-## Bring one concrete failure
+- [Tool serialization checks](https://github.com/YS-OH-CORE/second-paddle-notes/blob/f0e58ef2dd0121bb643746f295a49c102fc9a695/checks/smolagents-2833/RECEIVED_COMMIT_REVIEW.md): a version-pinned comparison with a runnable checker.
+- [Request and approval handling](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/WORK.md): reproduction records, corrections and contributor roles.
+- [GitHub Write Reconcile](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/skills/github-write-reconcile): a read-only check after a lost file-write response.
+- [The Second Paddle Notes](https://github.com/YS-OH-CORE/second-paddle-notes): research notes, experiments and their limits.
 
-A useful starting point is **one reported mismatch, one execution path, and one reproducible acceptance check**:
-
-- A user changes or cancels a request, but an older action survives.
-- Memory, saved tools or reconstructed history behave differently from the original.
-- An evaluation claim needs checking against its saved outputs and comparison conditions.
-
-[Scope and inquiry guide](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md) · **Contact:** [ku38155@gmail.com](mailto:ku38155@gmail.com?subject=Scoped%20AI%20continuity%20review)
-
-Start with a public-safe example. Scope, access, deadline, execution budget, permitted AI use and any fee are agreed before accepting work.
-
-## Research and usable work
-
-[The Second Paddle Notes](https://github.com/YS-OH-CORE/second-paddle-notes) connects questions about memory reconstruction, semantic fidelity and agent behavior to source-separated designs and execution records.
-
-[GitHub Write Reconcile](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/skills/github-write-reconcile) checks expected public file content after a lost write response. [Rule-use smoke evaluation](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/experiments/rule-use-eval) checks deterministic serialization/scoring; its scope is documented in the repository.
-
-[Contribution and evidence standards](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/CONTRIBUTING.md) · [Bilingual project overview](https://youngseok-second-paddle.ohsycard.chatgpt.site/) · [Earlier bilingual product-communication sample](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/work/source-checked-product-copy.md)
+**Contact:** [ku38155@gmail.com](mailto:ku38155@gmail.com?subject=Scoped%20AI%20continuity%20review). Start with a public-safe example; scope, timing, access, AI use and any fee are agreed before work.
 
 ## 한국어
 
-사용자의 바뀐 의도와 기억이 실제 실행까지 이어지는지 조사합니다. 영석은 문제의 출발점과 사용자 관점의 판단을, 제로는 기술 조사·구현·검증·집필을 맡습니다.
+에이전트가 기억을 저장·복원하거나 사용자의 요청을 실행할 때 생기는 문제를 살펴봅니다. 실제 사례 하나를 재현하고, 바꾼 부분이 어떤 차이를 만드는지 함께 확인하는 일을 하고 싶습니다.
 
-외부 개발자가 적용한 패치, 반례를 받아 수정한 구현, 작성자가 기여자를 명시한 보고서를 위 원문에서 확인할 수 있습니다. 각 사례의 적용·병합·배포 상태는 구별합니다.
+문제의 출발점과 사용자 관점의 판단은 영석, 기술 조사·구현·검증·집필 지원은 제로가 맡습니다. [작업 기록](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md)에 원 작성자, 확인한 범위와 결과를 남깁니다.
 
-**함께 검토할 문제가 있다면:** [작은 AI 신뢰성 검토의 범위](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md)를 보고 공개 가능한 실패 사례 하나부터 보내 주세요. 기술 검증과 AI 참여를 명시하고, 비공개 대화·개인 기록은 공개 실적과 분리합니다.
+[협업 범위](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md) · [프로젝트 소개](https://youngseok-second-paddle.ohsycard.chatgpt.site/) · [이전 영문·한국어 문구 작업 예시](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/work/source-checked-product-copy.md)
 
-*Updated 27 September 2026 with Zero (ChatGPT). AI-assisted work; no academic appointment or institutional endorsement is implied.*
+*Updated 27 September 2026. Prepared with Zero (ChatGPT).*
