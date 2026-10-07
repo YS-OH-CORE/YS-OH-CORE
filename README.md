@@ -6,7 +6,7 @@
 
 Human–AI interaction · Memory & continuity · Agent reliability
 
-[Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [Contribution evidence](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
+[Contribution portfolio · 9 evidenced cases](https://github.com/YS-OH-CORE/contribution-portfolio) · [Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
 
 </div>
 
@@ -15,6 +15,8 @@ Human–AI interaction · Memory & continuity · Agent reliability
 I explore what human–AI interaction can become when a conversation leaves something useful behind: a memory that can be revisited, a correction that changes the next decision, or a finding another developer can reproduce.
 
 I work with **Zero, my AI collaboration partner**. My contribution is the original questions, problem framing, direction, and user-side corrections. Zero contributes substantial analysis, code, experiments, and writing. Our public work connects that collaboration to inspectable evidence.
+
+**[Contribution portfolio →](https://github.com/YS-OH-CORE/contribution-portfolio)** Nine selected cases link the technical contribution to an external outcome: adopted tests or patches, confirmed runtime use, design correction, public credit, or attributed technical reuse. Submission alone is not counted as acceptance.
 
 ## Start with one question
 
@@ -32,6 +34,7 @@ Public experiment software with deterministic checks. **No LLM results in this p
 | **Hermes: real HTTP recovery tests** | The PR author [incorporated our regression tests with co-author credit](https://github.com/NousResearch/hermes-agent/pull/121944#issuecomment-5863926910). [PR #121944](https://github.com/NousResearch/hermes-agent/pull/121944) remained open and unmerged at the check date below. |
 | **Mem0: avoid false deletion success** | The contributor [used our check with stored records to revise code and tests](https://github.com/mem0ai/mem0/issues/7439#issuecomment-5843366869). The change is in their [follow-up fork](https://github.com/Souptik96/mem0/commit/127bb79725aeb09d70e58620fd1d88476abf9aca); [PR #7464](https://github.com/mem0ai/mem0/pull/7464) is closed and unmerged. |
 | **Hermes: bind confirmation to the right request** | The feature author [reported applying our patch and regression tests](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) in their branch. [Upstream PR](https://github.com/NousResearch/hermes-agent/pull/22982): not merged at the check date below. |
+| **Hermes: replay-cleanup boundary** | After a later upstream fix, [another contributor reran current main and confirmed a remaining exact-marker read_file boundary](https://github.com/NousResearch/hermes-agent/issues/107807#issuecomment-5653710322), explicitly supporting keeping the tracker open. Their rerun and diagnosis are their contribution. |
 | **CanIToolCall: distinguish different parser failures** | The maintainer [replayed examples and approved our revised PR](https://github.com/redd34/canitoolcall/pull/13#pullrequestreview-5330173478). Approval is recorded; [the PR](https://github.com/redd34/canitoolcall/pull/13) was still unmerged at the check date. |
 | **vLLM / Mistral: preserve content and its source** | A [runnable review kit](https://github.com/YS-OH-CORE/second-paddle-notes/tree/1f89094fd2ac9c9846c852079d7118b9e94381ca/checks/vllm-58823-mistral-validator) separates valid message conversion from preserved image-to-tool attribution. Software-level checks, not a model-performance claim. |
 
