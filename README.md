@@ -6,7 +6,7 @@
 
 Human–AI interaction · Memory & continuity · Agent reliability
 
-[Contribution portfolio · 10 evidenced cases](https://github.com/YS-OH-CORE/contribution-portfolio) · [Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
+[Contribution portfolio · selected work](https://github.com/YS-OH-CORE/contribution-portfolio) · [Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
 
 </div>
 
@@ -16,7 +16,7 @@ I explore what human–AI interaction can become when a conversation leaves some
 
 I work with **Zero, my AI collaboration partner**. My contribution is the original questions, problem framing, direction, and user-side corrections. Zero contributes substantial analysis, code, experiments, and writing. Our public work connects that collaboration to inspectable evidence.
 
-**[Contribution portfolio →](https://github.com/YS-OH-CORE/contribution-portfolio)** Ten selected cases link the technical contribution to an external outcome: adopted tests or patches, confirmed runtime use, design correction, public credit, or attributed technical reuse. Submission alone is not counted as acceptance.
+**[Contribution portfolio →](https://github.com/YS-OH-CORE/contribution-portfolio)** Selected cases connect the technical contribution to its external outcome: merged fixes, a separately reproduced regression, approved implementations, adopted tests, confirmed use, design correction or named research credit. Start with the featured cases; each links the work to its public evidence and current stage.
 
 ## Start with one question
 
@@ -35,11 +35,11 @@ Public experiment software with deterministic checks. **No LLM results in this p
 | **Mem0: avoid false deletion success** | The contributor [used our check with stored records to revise code and tests](https://github.com/mem0ai/mem0/issues/7439#issuecomment-5843366869). The change is in their [follow-up fork](https://github.com/Souptik96/mem0/commit/127bb79725aeb09d70e58620fd1d88476abf9aca); [PR #7464](https://github.com/mem0ai/mem0/pull/7464) is closed and unmerged. |
 | **Hermes: bind confirmation to the right request** | The feature author [reported applying our patch and regression tests](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) in their branch. [Upstream PR](https://github.com/NousResearch/hermes-agent/pull/22982): not merged at the check date below. |
 | **Hermes: replay-cleanup boundary** | After a later upstream fix, [another contributor reran current main and confirmed a remaining exact-marker read_file boundary](https://github.com/NousResearch/hermes-agent/issues/107807#issuecomment-5653710322), explicitly supporting keeping the tracker open. Their rerun and diagnosis are their contribution. |
-| **CanIToolCall: distinguish different parser failures** | The maintainer [replayed examples and approved our revised PR](https://github.com/redd34/canitoolcall/pull/13#pullrequestreview-5330173478). Approval is recorded; [the PR](https://github.com/redd34/canitoolcall/pull/13) was still unmerged at the check date. |
-| **Qdrant: persistent deletion recovery** | Another contributor opened [PR #1515](https://github.com/qdrant/qdrant-client/pull/1515) with **“Fixes #1510”** after our [reproduction report](https://github.com/qdrant/qdrant-client/issues/1510). Their implementation and regression test are their work; the PR is still open and unmerged. |
+| **CanIToolCall: distinguish different parser failures** | The maintainer [replayed examples and approved our revised triage](https://github.com/redd34/canitoolcall/pull/13#pullrequestreview-5330173478). [PR #13](https://github.com/redd34/canitoolcall/pull/13) merged into CanIToolCall on 13 October 2026 UTC. This improves failure classification; it is not a vLLM engine fix. |
+| **Qdrant: persistent deletion recovery** | [PR #1515](https://github.com/qdrant/qdrant-client/pull/1515), explicitly linked to our [report #1510](https://github.com/qdrant/qdrant-client/issues/1510), merged into the upstream `dev` branch on 13 October 2026 UTC. Our contribution is reproduction and follow-up review; the implementation and extensions are by adityaanikam and joein. |
 | **vLLM / Mistral: preserve content and its source** | A [runnable review kit](https://github.com/YS-OH-CORE/second-paddle-notes/tree/1f89094fd2ac9c9846c852079d7118b9e94381ca/checks/vllm-58823-mistral-validator) separates valid message conversion from preserved image-to-tool attribution. Software-level checks, not a model-performance claim. |
 
-*Hermes HTTP recovery and Mem0 entries checked 29 September 2026 (KST). The other entries retain their 27 September snapshot. Follow the linked records for later changes. These are specific contributions, not institutional endorsements.*
+*CanIToolCall and Qdrant entries updated 19 October 2026 (KST). Hermes HTTP recovery and Mem0 retain their 29 September checks; the remaining entries retain their 27 September snapshot. Follow the portfolio for source-specific updates. These are specific contributions, not institutional endorsements.*
 
 ## Follow the thread
 
