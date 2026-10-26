@@ -6,7 +6,7 @@
 
 Human–AI interaction · Memory & continuity · Agent reliability
 
-[Contribution portfolio · selected work](https://github.com/YS-OH-CORE/contribution-portfolio) · [Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
+[15 public contribution cases · portfolio](https://github.com/YS-OH-CORE/contribution-portfolio) · [Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
 
 </div>
 
@@ -27,19 +27,31 @@ The same history, two fresh contexts: one asks for the current instruction; the 
 **[Explore the correction-use prototype →](https://github.com/YS-OH-CORE/second-paddle-notes/tree/62d92bfdd9b65f83a07790617354678d0866a1a4/experiments/correction-use-pilot)**  
 Public experiment software with deterministic checks. **No LLM results in this prototype yet.**
 
-## Work that others can inspect
+## 15 public contribution cases
 
-| Work | What is actually established |
-| :--- | :--- |
-| **Hermes: real HTTP recovery tests** | The PR author [incorporated our regression tests with co-author credit](https://github.com/NousResearch/hermes-agent/pull/121944#issuecomment-5863926910). [PR #121944](https://github.com/NousResearch/hermes-agent/pull/121944) remained open and unmerged at the check date below. |
-| **Mem0: avoid false deletion success** | The contributor [used our check with stored records to revise code and tests](https://github.com/mem0ai/mem0/issues/7439#issuecomment-5843366869). The change is in their [follow-up fork](https://github.com/Souptik96/mem0/commit/127bb79725aeb09d70e58620fd1d88476abf9aca); [PR #7464](https://github.com/mem0ai/mem0/pull/7464) is closed and unmerged. |
-| **Hermes: bind confirmation to the right request** | The feature author [reported applying our patch and regression tests](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) in their branch. [Upstream PR](https://github.com/NousResearch/hermes-agent/pull/22982): not merged at the check date below. |
-| **Hermes: replay-cleanup boundary** | After a later upstream fix, [another contributor reran current main and confirmed a remaining exact-marker read_file boundary](https://github.com/NousResearch/hermes-agent/issues/107807#issuecomment-5653710322), explicitly supporting keeping the tracker open. Their rerun and diagnosis are their contribution. |
-| **CanIToolCall: distinguish different parser failures** | The maintainer [replayed examples and approved our revised triage](https://github.com/redd34/canitoolcall/pull/13#pullrequestreview-5330173478). [PR #13](https://github.com/redd34/canitoolcall/pull/13) merged into CanIToolCall on 13 October 2026 UTC. This improves failure classification; it is not a vLLM engine fix. |
-| **Qdrant: persistent deletion recovery** | [PR #1515](https://github.com/qdrant/qdrant-client/pull/1515), explicitly linked to our [report #1510](https://github.com/qdrant/qdrant-client/issues/1510), merged into the upstream `dev` branch on 13 October 2026 UTC. Our contribution is reproduction and follow-up review; the implementation and extensions are by adityaanikam and joein. |
-| **vLLM / Mistral: preserve content and its source** | A [runnable review kit](https://github.com/YS-OH-CORE/second-paddle-notes/tree/1f89094fd2ac9c9846c852079d7118b9e94381ca/checks/vllm-58823-mistral-validator) separates valid message conversion from preserved image-to-tool attribution. Software-level checks, not a model-performance claim. |
+These **15 selected public collaboration cases** connect our work to an external outcome: **2 authored PRs merged**, **1 report-linked fix released**, **2 authored PRs approved and unmerged**, and **10 cases of adoption, reproduction, use, design correction, citation or credit confirmed in public records**.
 
-*CanIToolCall and Qdrant entries updated 19 October 2026 (KST). Hermes HTTP recovery and Mem0 retain their 29 September checks; the remaining entries retain their 27 September snapshot. Follow the portfolio for source-specific updates. These are specific contributions, not institutional endorsements.*
+**[Read all 15 detailed cases and their evidence →](https://github.com/YS-OH-CORE/contribution-portfolio/blob/main/CASES.ko.md)**
+
+| Case | Contribution | Public evidence and current stage |
+| :--- | :--- | :--- |
+| **01 · Hermes** | Bind confirmation to the right request | The author applied our patch and regression tests verbatim. **Author branch; open, unmerged.** [Adoption confirmed](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) |
+| **02 · Hermes** | Test real HTTP recovery | The author reused our test commit with co-author credit and reported rerunning the tests. **Open, unmerged.** [Reuse confirmed](https://github.com/NousResearch/hermes-agent/pull/121944#issuecomment-5863926910) |
+| **03 · LangGraph** | Preserve nested-task compatibility | The proposal author corrected the design to preserve existing exception guards. **Design correction acknowledged.** [Author response](https://github.com/langchain-ai/langgraph/issues/9072#issuecomment-5980134186) |
+| **04 · Total Agent Memory** | Review saved evaluation verdicts and reporting | The external report names Youngseok Oh and Zero for the scoped review and technical work. **Report credit published.** [Credit commit](https://github.com/vbcherepanov/total-agent-memory/commit/55d0ab0124ca4fca81479a5bcafa262aaaf0e19e) |
+| **05 · Hermes** | Prevent stale session-restoration responses | The author confirmed both failure modes and reported a branch fix, with AI assistance disclosed. **PR closed, unmerged.** [Fix confirmed](https://github.com/NousResearch/hermes-agent/pull/130126#issuecomment-5932499656) |
+| **06 · Hermes** | Keep interruption-marker JSON as ordinary data | The author added regression coverage for valid JSON scalar and list payloads quoting the marker. **PR closed, unmerged.** [Coverage confirmed](https://github.com/NousResearch/hermes-agent/pull/107809#issuecomment-5931462372) |
+| **07 · Hermes / Signal** | Separate personal notes from group messages | A participant implemented the proposed setting and reported successful use on a linked device. **Local runtime use confirmed; no PR claimed.** [Runtime report](https://github.com/NousResearch/hermes-agent/issues/121970#issuecomment-5823143850) |
+| **08 · Hermes** | Make interrupted CLI execution visible | The follow-up author attributes the notice's wording and insertion point to our measured candidate. **Follow-up PR open, draft, unmerged.** [Attributed implementation](https://github.com/NousResearch/hermes-agent/pull/133858) |
+| **09 · Mem0** | Expose a recency-ranking counterexample | Another tool's author cites our counterexample when comparing their existing resolver. **Analysis publicly cited.** [Named comparison](https://github.com/mem0ai/mem0/issues/7535#issuecomment-5992249148) |
+| **10 · Qdrant** | Make failed persistent deletions retryable | Our report #1510 is linked to fix #1515, implemented by adityaanikam and joein. **Released in v1.20.0**, as confirmed by the maintainer. [Release confirmation](https://github.com/qdrant/qdrant-client/issues/1510#issuecomment-6360867021) |
+| **11 · CanIToolCall** | Reject incomplete verification reports | The maintainer reproduced the failure, approved the correction and merged our PR #31. **Merged.** [Upstream PR](https://github.com/redd34/canitoolcall/pull/31) |
+| **12 · CanIToolCall** | Compare compiled engine fixes and detect regressions | The maintainer separately reproduced the Ollama regression found with our verifier; its current implementation was approved. **PR #33 open, unmerged.** [External reproduction and credit](https://github.com/redd34/canitoolcall/issues/37) |
+| **13 · CanIToolCall** | Distinguish parser-recovery failure causes | The maintainer replayed examples, approved the classification work and merged our PR #13. **Merged into CanIToolCall.** [Upstream PR](https://github.com/redd34/canitoolcall/pull/13) |
+| **14 · mnemo** | Preserve JSON types in fact identity | The owner reported 11 resolver tests passing and approved the current head. **Open, unmerged; DCO sign-off and CI approval remain.** [Owner confirmation](https://github.com/sattyamjjain/mnemo/pull/204#issuecomment-6096480334) |
+| **15 · Mem0** | Repair deletion consumers after a list-format change | The author responded to our comparison matrix by fixing both sync and async consumers and adding regression coverage. **Author branch; open, draft, unmerged.** [Fix confirmed](https://github.com/mem0ai/mem0/pull/7647#issuecomment-6347118756) |
+
+*Public sources and PR states checked 26 October 2026 (KST). The count is distinct collaboration cases. External implementations and reruns retain their authorship; each linked case records the scope, chronology and remaining conditions.*
 
 ## Follow the thread
 
