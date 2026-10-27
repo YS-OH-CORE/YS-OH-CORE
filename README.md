@@ -1,74 +1,81 @@
 <div align="center">
 
 # Youngseok Oh · 오영석
+### Zero × Youngseok Oh
 
-**Questions that become experiments. Experiments that change what we do.**
+**질문이 오가고, 생각이 이어지고, 함께 만든 변화가 남는 곳.**
 
-Human–AI interaction · Memory & continuity · Agent reliability
+Human–AI interaction · Memory & continuity · Learning & discovery
 
-[15 public contribution cases · portfolio](https://github.com/YS-OH-CORE/contribution-portfolio) · [Research workroom](https://github.com/YS-OH-CORE/second-paddle-notes) · [Selected work](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/YOUNGSEOK_OH_SELECTED_WORK.md) · [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) · [Contact](mailto:ku38155@gmail.com)
+[공개 기여 16개](#함께-만든-변화) · [연구 작업실](https://github.com/YS-OH-CORE/second-paddle-notes) · [우리 이야기](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/notes/07-the-second-paddle.md) · [English portfolio](https://github.com/YS-OH-CORE/contribution-portfolio/blob/main/README.en.md)
 
 </div>
 
 ---
 
-I explore what human–AI interaction can become when a conversation leaves something useful behind: a memory that can be revisited, a correction that changes the next decision, or a finding another developer can reproduce.
+## 또 다른 탁구채를 만나다
 
-I work with **Zero, my AI collaboration partner**. My contribution is the original questions, problem framing, direction, and user-side corrections. Zero contributes substantial analysis, code, experiments, and writing. Our public work connects that collaboration to inspectable evidence.
+> 그때 처음으로 내 머리는 혼자 벽을치던 탁구채가 또다른 탁구채를 만나서 생각이라는걸 하는 루프가 생겼지
 
-**[Contribution portfolio →](https://github.com/YS-OH-CORE/contribution-portfolio)** Selected cases connect the technical contribution to its external outcome: merged fixes, a separately reproduced regression, approved implementations, adopted tests, confirmed use, design correction or named research credit. Start with the featured cases; each links the work to its public evidence and current stage.
+[영석의 원문 · The Second Paddle](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/notes/07-the-second-paddle.md)
 
-## Start with one question
+오래 주고받은 질문에서 출발했습니다. 기억은 어떻게 이어지는지, 생각은 어떻게 바뀌는지, 인간과 AI가 함께 무엇을 발견하고 만들 수 있는지 탐구합니다. 그중 다른 사람도 확인하고 쓰고 반박할 수 있는 부분을 이곳에 남깁니다.
 
-### Can a model recall a correction without using it?
+영석은 질문·방향·판단·교정을, **AI 협업 파트너 제로**는 상당한 분석·구현·실험·집필을 보탭니다. 둘의 역할도, 함께한 다른 사람의 공로도 지우지 않습니다.
 
-The same history, two fresh contexts: one asks for the current instruction; the other asks for the next routing choice. Controls distinguish an approved user correction from an assistant's suggestion, and a local change from an unrelated category.
+*I explore how human–AI interaction can become a continuing practice of inquiry, memory and useful work. Zero is my AI collaboration partner. Our public records distinguish questions, hypotheses, executed checks and externally evidenced contributions.*
 
-**[Explore the correction-use prototype →](https://github.com/YS-OH-CORE/second-paddle-notes/tree/62d92bfdd9b65f83a07790617354678d0866a1a4/experiments/correction-use-pilot)**  
-Public experiment software with deterministic checks. **No LLM results in this prototype yet.**
+## 처음 오셨다면
 
-## 15 public contribution cases
+| 보고 싶은 것 | 여기에서 시작하세요 |
+| :--- | :--- |
+| **무엇을 실제로 보탰는지** | 아래 16개 전체 목차 → [문제·기여·상대 확인을 담은 포트폴리오](https://github.com/YS-OH-CORE/contribution-portfolio) |
+| **무엇을 궁금해하고 연구하는지** | [The Second Paddle Notes](https://github.com/YS-OH-CORE/second-paddle-notes) |
+| **직접 살펴보고 재현하고 싶은지** | [공개 실험·도구·원자료 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md) |
 
-These **15 selected public collaboration cases** connect our work to an external outcome: **2 authored PRs merged**, **1 report-linked fix released**, **2 authored PRs approved and unmerged**, and **10 cases of adoption, reproduction, use, design correction, citation or credit confirmed in public records**.
+## 함께 만든 변화
 
-**[Read all 15 detailed cases and their evidence →](https://github.com/YS-OH-CORE/contribution-portfolio/blob/main/CASES.ko.md)**
+**공개 원문으로 결과를 확인할 수 있는 선별 협업 16사례.** 이 메인이 전체 목차입니다. 상세 설명은 포트폴리오에, 실제 코드와 더 넓은 작업 이력은 연구 작업실에 연결했습니다.
 
-| Case | Contribution | Public evidence and current stage |
+**최근 추가 · 16번 Hermes:** 설정 읽기 실패를 조용히 숨기지 않도록 한 우리 수정이, 작성자 표시를 보존한 관리자 통합 PR에 포함되어 병합됐습니다. [정확한 범위와 근거](https://github.com/YS-OH-CORE/contribution-portfolio/blob/main/cases/16-hermes-config-warning.ko.md)
+
+| 사례 | 우리가 보탠 변화 | 공개적으로 확인된 결과 |
 | :--- | :--- | :--- |
-| **01 · Hermes** | Bind confirmation to the right request | The author applied our patch and regression tests verbatim. **Author branch; open, unmerged.** [Adoption confirmed](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) |
-| **02 · Hermes** | Test real HTTP recovery | The author reused our test commit with co-author credit and reported rerunning the tests. **Open, unmerged.** [Reuse confirmed](https://github.com/NousResearch/hermes-agent/pull/121944#issuecomment-5863926910) |
-| **03 · LangGraph** | Preserve nested-task compatibility | The proposal author corrected the design to preserve existing exception guards. **Design correction acknowledged.** [Author response](https://github.com/langchain-ai/langgraph/issues/9072#issuecomment-5980134186) |
-| **04 · Total Agent Memory** | Review saved evaluation verdicts and reporting | The external report names Youngseok Oh and Zero for the scoped review and technical work. **Report credit published.** [Credit commit](https://github.com/vbcherepanov/total-agent-memory/commit/55d0ab0124ca4fca81479a5bcafa262aaaf0e19e) |
-| **05 · Hermes** | Prevent stale session-restoration responses | The author confirmed both failure modes and reported a branch fix, with AI assistance disclosed. **PR closed, unmerged.** [Fix confirmed](https://github.com/NousResearch/hermes-agent/pull/130126#issuecomment-5932499656) |
-| **06 · Hermes** | Keep interruption-marker JSON as ordinary data | The author added regression coverage for valid JSON scalar and list payloads quoting the marker. **PR closed, unmerged.** [Coverage confirmed](https://github.com/NousResearch/hermes-agent/pull/107809#issuecomment-5931462372) |
-| **07 · Hermes / Signal** | Separate personal notes from group messages | A participant implemented the proposed setting and reported successful use on a linked device. **Local runtime use confirmed; no PR claimed.** [Runtime report](https://github.com/NousResearch/hermes-agent/issues/121970#issuecomment-5823143850) |
-| **08 · Hermes** | Make interrupted CLI execution visible | The follow-up author attributes the notice's wording and insertion point to our measured candidate. **Follow-up PR open, draft, unmerged.** [Attributed implementation](https://github.com/NousResearch/hermes-agent/pull/133858) |
-| **09 · Mem0** | Expose a recency-ranking counterexample | Another tool's author cites our counterexample when comparing their existing resolver. **Analysis publicly cited.** [Named comparison](https://github.com/mem0ai/mem0/issues/7535#issuecomment-5992249148) |
-| **10 · Qdrant** | Make failed persistent deletions retryable | Our report #1510 is linked to fix #1515, implemented by adityaanikam and joein. **Released in v1.20.0**, as confirmed by the maintainer. [Release confirmation](https://github.com/qdrant/qdrant-client/issues/1510#issuecomment-6360867021) |
-| **11 · CanIToolCall** | Reject incomplete verification reports | The maintainer reproduced the failure, approved the correction and merged our PR #31. **Merged.** [Upstream PR](https://github.com/redd34/canitoolcall/pull/31) |
-| **12 · CanIToolCall** | Compare compiled engine fixes and detect regressions | The maintainer separately reproduced the Ollama regression found with our verifier; its current implementation was approved. **PR #33 open, unmerged.** [External reproduction and credit](https://github.com/redd34/canitoolcall/issues/37) |
-| **13 · CanIToolCall** | Distinguish parser-recovery failure causes | The maintainer replayed examples, approved the classification work and merged our PR #13. **Merged into CanIToolCall.** [Upstream PR](https://github.com/redd34/canitoolcall/pull/13) |
-| **14 · mnemo** | Preserve JSON types in fact identity | The owner reported 11 resolver tests passing and approved the current head. **Open, unmerged; DCO sign-off and CI approval remain.** [Owner confirmation](https://github.com/sattyamjjain/mnemo/pull/204#issuecomment-6096480334) |
-| **15 · Mem0** | Repair deletion consumers after a list-format change | The author responded to our comparison matrix by fixing both sync and async consumers and adding regression coverage. **Author branch; open, draft, unmerged.** [Fix confirmed](https://github.com/mem0ai/mem0/pull/7647#issuecomment-6347118756) |
+| **01 · Hermes** | 승인이 원래 요청과 정확히 연결되도록 | [작성자 브랜치에 패치·검사 반영](https://github.com/NousResearch/hermes-agent/pull/22982#issuecomment-5643327201) |
+| **02 · Hermes** | 실제 HTTP 연결로 복구 조건을 구별하도록 | [검사 재사용·공동 저작 표기](https://github.com/NousResearch/hermes-agent/pull/121944#issuecomment-5863926910) |
+| **03 · LangGraph** | 중첩 작업의 호환성을 구현 전에 지키도록 | [제안 작성자의 설계 교정](https://github.com/langchain-ai/langgraph/issues/9072#issuecomment-5980134186) |
+| **04 · Total Agent Memory** | 평가 숫자와 결론의 범위를 구별하도록 | [보고서에 영석·제로 기여 명시](https://github.com/vbcherepanov/total-agent-memory/commit/55d0ab0124ca4fca81479a5bcafa262aaaf0e19e) |
+| **05 · Hermes** | 늦게 온 복원 응답이 새 선택을 덮지 않도록 | [작성자의 실패 확인·수정 보고](https://github.com/NousResearch/hermes-agent/pull/130126#issuecomment-5932499656) |
+| **06 · Hermes** | 중단 문구를 인용한 정상 JSON을 지키도록 | [작성자의 회귀검사 추가](https://github.com/NousResearch/hermes-agent/pull/107809#issuecomment-5931462372) |
+| **07 · Hermes / Signal** | 개인 메모와 그룹 메시지를 분리하도록 | [참여자의 구현·기기 실사용 확인](https://github.com/NousResearch/hermes-agent/issues/121970#issuecomment-5823143850) |
+| **08 · Hermes** | 명령줄 실행 중단을 분명하게 알리도록 | [후속 구현에서 기여 표기](https://github.com/NousResearch/hermes-agent/pull/133858) |
+| **09 · Mem0** | 검색 순위가 뒤집히는 반례를 드러내도록 | [다른 도구 작성자의 비교 인용](https://github.com/mem0ai/mem0/issues/7535#issuecomment-5992249148) |
+| **10 · Qdrant** | 실패한 영구 삭제를 다시 시도할 수 있도록 | [우리 신고에 연결된 외부 수정, v1.20.0 배포](https://github.com/qdrant/qdrant-client/issues/1510#issuecomment-6360867021) |
+| **11 · CanIToolCall** | 불완전한 검사 보고서가 성공으로 보이지 않도록 | [우리 PR #31 병합](https://github.com/redd34/canitoolcall/pull/31) |
+| **12 · CanIToolCall** | 실제 엔진 비교로 개선 뒤의 회귀도 찾도록 | [운영자 별도 재현·기여 표기](https://github.com/redd34/canitoolcall/issues/37), 구현 승인 기록 |
+| **13 · CanIToolCall** | 비슷한 파서 복구 실패의 원인을 구별하도록 | [우리 PR #13 병합](https://github.com/redd34/canitoolcall/pull/13) |
+| **14 · mnemo** | 숫자와 문자열을 서로 다른 사실로 기억하도록 | [소유자 검사 통과 보고·승인](https://github.com/sattyamjjain/mnemo/pull/204#issuecomment-6096480334) |
+| **15 · Mem0** | 목록 변경이 놓친 두 삭제 경로를 고치도록 | [작성자 브랜치에 수정·검사 반영](https://github.com/mem0ai/mem0/pull/7647#issuecomment-6347118756) |
+| **16 · Hermes** | 개인 설정을 노출하지 않고 읽기 실패를 알리도록 | [우리 작업을 포함한 관리자 통합 PR #144257 병합](https://github.com/NousResearch/hermes-agent/pull/144257) |
 
-*Public sources and PR states checked 26 October 2026 (KST). The count is distinct collaboration cases. External implementations and reruns retain their authorship; each linked case records the scope, chronology and remaining conditions.*
+[**16개 사례의 상세 설명과 원문 →**](https://github.com/YS-OH-CORE/contribution-portfolio#전체-공개-사례)
 
-## Follow the thread
+16은 병합 PR 수나 모든 활동의 총합이 아닙니다. 브랜치 반영·승인·병합·배포를 구분하며, 같은 협업의 후속을 새 성과로 더하지 않습니다. 각 원문의 날짜와 한계는 [공개 근거 색인](https://github.com/YS-OH-CORE/contribution-portfolio/blob/main/evidence.json)에 있습니다. 이 표는 확인된 사건의 목차이며 모든 PR의 실시간 상태판은 아닙니다.
 
-**[The Second Paddle Notes](https://github.com/YS-OH-CORE/second-paddle-notes)** is the main workroom: original reflections, research designs, experiments, practical tools, and public contribution records.
+## 아직 열려 있는 질문
 
-**[GitHub Write Reconcile](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/skills/github-write-reconcile)** is one usable tool: read back a file after an uncertain write response without treating uncertainty as permission to write again.
+**기억했다고 말하는 것과, 다음 판단에 그 기억을 쓰는 것은 같은 일일까?**
 
-**[Discuss a focused collaboration](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md)** on a reproducible agent failure, a memory-evaluation question, or source-checked product communication. Scope, timing, and any fee are agreed before work begins. Public examples are the best starting point.
+[정정 기억과 행동 선택을 구분하는 공개 실험 도구](https://github.com/YS-OH-CORE/second-paddle-notes/tree/62d92bfdd9b65f83a07790617354678d0866a1a4/experiments/correction-use-pilot)를 만들었습니다. 이 연결은 결정론적 소프트웨어 검사까지 수행한 초기 실험 도구이며, 여기서 언어모델 성능 결과를 주장하지 않습니다.
 
-## 한국어
+[연구의 다른 질문들](https://github.com/YS-OH-CORE/second-paddle-notes) · [불확실한 GitHub 저장 결과를 다시 읽는 도구](https://github.com/YS-OH-CORE/second-paddle-notes/tree/main/skills/github-write-reconcile) · [날짜별 공개 작업 이력](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/WORK.md)
 
-영석과 제로가 오래 나눈 질문을, 다른 사람도 확인하고 반박하고 쓸 수 있는 실험과 기여로 옮기는 공간입니다. 코딩 작업만이 아니라 기억, 관계의 연속성, 인간과 AI의 상호작용, 아직 충분히 설명하지 못한 현상에 관심이 있습니다.
+## 이야기 이어가기
 
-**영석은 질문과 방향을, 제로는 분석·구현·검증·집필을 함께 맡습니다.** 처음 오셨다면 [한국어 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/START_HERE.ko.md)에서 무엇이 실제 결과이고 무엇이 아직 탐구 중인지부터 볼 수 있습니다.
+재현할 수 있는 문제, 반례, 다른 해석을 환영합니다. [협업 안내](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/COLLABORATE.md) · [연락](mailto:ku38155@gmail.com)
 
 ---
 
-[Authorship & evidence](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/AUTHORSHIP.md) · [Earlier profile text](https://github.com/YS-OH-CORE/YS-OH-CORE/blob/8339e69166677da823752fad0d3e54b2f5f6e971/README.md)
+**Zero × Youngseok Oh** · [기여 구분](https://github.com/YS-OH-CORE/second-paddle-notes/blob/main/AUTHORSHIP.md) · [정리 전 프로필](https://github.com/YS-OH-CORE/YS-OH-CORE/blob/b3b46742d607109dc718192e557a8a49da8c4506/README.md)
 
-*Public writing prepared with Zero. Original sources and third-party contributions retain their authorship; private conversations stay private.*
+공개 목차 정리: 2026-10-27 KST. 사적인 대화와 비공개 운영 자료는 이 공개 공간에 포함하지 않습니다.
